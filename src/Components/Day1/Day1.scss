@@ -1,0 +1,86 @@
+.container-day1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', 'Courier', sans-serif;
+}
+
+.widget {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #43389F 0%, #4ec6ca 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+
+    .number-container {
+        position: relative;
+        width: 200px;
+        height: 100px;
+    }
+    
+    
+    .one-one, .one-two {
+        position: absolute;
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+    }
+    
+    .one-one {
+        width: 20px;
+        height: 40px;
+        transform: rotate(50deg);
+        left: -16px;
+        top: 0px;
+    }
+    
+    .one-two {
+        z-index: 10;
+        width: 25px;
+        height: 100px;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3);
+    }
+    
+    .zero-one, .zero-two {
+        box-sizing: border-box;
+        position: absolute;
+        background-color: none;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 24px solid white;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .zero-one {
+        right: 0;
+        bottom: 0;
+    }
+    
+    .zero-two {
+        right: 80px;
+        bottom: 0;
+    }
+    
+    p {
+        color: white; 
+        margin: 0;
+    }
+    
+    .days {
+        font-size: 5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    .css-challenge {
+        font-size: 1.45rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        word-spacing: 7px;
+    }
+}
